@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Leaflet Test</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<meta charset="UTF-8">
+	<title>Leaflet Test</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 
 </head>
 <body>
-  <h2>Leaflet Is Awesome and great and i'm still on gh pages but i forgot because forgot to switch back to master</h2>
-  <p>Leaflet is a simple and powerful way to make web maps (and maps that are optimized for mobile). If you have questions about adding popups, points, centering things, or drawing lines, the documentation lives <a href="http://leafletjs.com/reference.html">here</a>. </p>
-  <div id="map"></div> 
-  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-  <script src="js/script.js"></script> 
+	<div id="map"></div> 
+	<div id="sidebar">
+		<div id = 'menu'><div id = 'about'>About</div></div>
+		<h1>My Favorite Parks</h1>
+		<div class = 'park centralPark'>
+			<div class = 'parkName'>Central Park</div>
+			<div class = 'parkDescription'>
+				Midtown Manhattan - Excellent Walkways
+			</div>
+		</div>
+		<div class = 'park riversidePark'>
+			<div class = 'parkName'>Riverside Park</div>
+			<div class = 'parkDescription'>
+				Upper Manhattan - Waterfront Views
+			</div>
+		</div>
+		<div class = 'park prospectPark'>
+			<div class = 'parkName'>Prospect Park</div>
+			<div class = 'parkDescription'>
+				Central Brooklyn - Historical Sites
+			</div>
+		</div>
+		<div id = "image">
+			<div class = "popup privacy">
+				<div class = "close">&#10006;</div>
+				<h2>About this Site</h2>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at justo ac orci pulvinar venenatis. Ut neque enim, cursus vitae euismod nec, scelerisque vitae purus. Vivamus auctor risus at feugiat finibus. Pellentesque sit amet eros non enim lacinia dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a venenatis enim. Curabitur et luctus turpis. Cras mattis augue purus, quis efficitur metus pretium sit amet.</p>
+
+				<p>Phasellus pellentesque suscipit sapien, dictum laoreet nunc sodales quis. Fusce viverra, augue eget ornare aliquet, neque massa rutrum est, et bibendum enim nunc in turpis. Vivamus ut mollis velit. Vestibulum rutrum nunc sed ipsum ultricies elementum. Nullam at justo magna. Morbi elit tortor, mattis at blandit quis, commodo sollicitudin lectus. Morbi efficitur nisi ac varius fermentum. Sed blandit orci ante, ut tempus nibh feugiat nec. Aliquam pharetra turpis in dui convallis tempus. Duis at ante enim. Pellentesque sed interdum risus.</p>
+
+
+			</div>
+			<div id='mask'></div>
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script src="js/script.js"></script> 
 </body>
 </html>
