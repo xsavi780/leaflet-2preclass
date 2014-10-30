@@ -1,2 +1,2 @@
-leaflet-1
-=========
+leaflet-2 Pre-class Demo
+========================
